@@ -1,0 +1,10 @@
+.tasks {
+    border: 2px solid var(--color-verde);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.row {
+    row-gap: 1rem;
+}

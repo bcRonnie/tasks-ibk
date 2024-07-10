@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-1">
+    <input
+      type="checkbox"
+      class="form-check-input"
+      [(ngModel)]="task.checked"
+    />
+  </div>
+  <div class="col-5">
+    {{ task.name }}
+  </div>
+  <div class="col-1">
+    <div class="delete" *ngIf="!task.checked" (click)="deleteTask()" >x</div>
+  </div>
+</div>

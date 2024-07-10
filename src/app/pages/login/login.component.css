@@ -1,0 +1,16 @@
+.div-login {    
+    border: 2px solid var(--color-verde);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

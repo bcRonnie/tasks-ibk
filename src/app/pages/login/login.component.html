@@ -1,0 +1,23 @@
+<div class="center-center">
+        <form [formGroup]="loginForm" 
+                autocomplete="off" 
+                (ngSubmit)="onSubmitLogin()"
+                class="row div-login">
+            <div class="col">
+                <div class="row">
+                    <label for="user">Usuario</label>
+                    <input id="user" type="text" class="form-control" formControlName="user">
+                </div>
+                <div class="row">
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" class="form-control" formControlName="password">
+                </div>
+            </div>
+            <div class="col ">
+                <div class="center-center">
+                    <button class="btn btn-success" type="submit" [disabled]="!this.loginForm.valid">Ingresar</button>
+                </div>            
+            </div>
+        </form>
+</div>
+

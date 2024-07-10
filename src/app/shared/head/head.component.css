@@ -1,0 +1,8 @@
+.head {
+    height: 10%;
+    background-color: var(--color-verde);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+}

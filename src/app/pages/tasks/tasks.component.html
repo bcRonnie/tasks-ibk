@@ -1,0 +1,25 @@
+<div class="p-4">
+    LISTA DE TAREAS
+    <hr>
+    <form [formGroup]="taskForm" 
+                autocomplete="off" 
+                (ngSubmit)="onSubmitAdd()">
+        <div class="row">
+            <div class="col-md-1">
+                <label for="task">Tarea: </label>            
+            </div>
+            <div class="col-md-4">
+                <input appAlphanumeric id="task" type="text" class="form-control" formControlName="task" pattern="/^[-a-zA-Z0-9]+$/">
+            </div>
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-success">Agregar</button>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-md-6 tasks" *ngIf="tasks.length > 0">
+
+            <app-task [task]="task" (deleteEvent)="deleteTask($event)" *ngFor="let task of tasks"></app-task>
+        </div>
+    </div>
+</div>

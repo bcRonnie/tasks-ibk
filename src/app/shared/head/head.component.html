@@ -1,0 +1,8 @@
+<div class="head">
+    <div>
+        {{user | uppercase}}
+    </div>
+    <div *ngIf="loggedIn">
+        <button class="btn btn-secondary" (click)="logout()">Cerrar sesión</button>
+    </div>
+</div>
